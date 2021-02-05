@@ -6,7 +6,7 @@ function maska_elementor_form_create_new_user( $record, $ajax_handler ) // creat
     $form_name = $record->get_form_settings('form_name');
     
     //Check that the form is the "Maska Register Form" if not - stop and return;
-    if ('Maska Register Form' !== $form_name) {
+    if ('Form Name' !== $form_name) {
         return;
     }
     
@@ -36,8 +36,8 @@ function maska_elementor_form_create_new_user( $record, $ajax_handler ) // creat
     }
 
     // Get user meta data
-	$first_name = $form_data["First Name"];
-	$last_name = $form_data["Last Name"];
+    $first_name = $form_data["First Name"];
+    $last_name = $form_data["Last Name"];
     $phone_number = $form_data["Phone Number"];
     $country = $form_data["Country"];
     $city = $form_data["City"];
