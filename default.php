@@ -1,7 +1,7 @@
 <?php 
 
-add_action( 'elementor_pro/forms/new_record',  'maska_elementor_form_create_new_user' , 10, 2 );
-function maska_elementor_form_create_new_user( $record, $ajax_handler ) // creating function 
+add_action( 'elementor_pro/forms/new_record',  'masrengga_elementor_form_create_new_user' , 10, 2 );
+function masrengga_elementor_form_create_new_user( $record, $ajax_handler ) // creating function 
 {
     $form_name = $record->get_form_settings('form_name');
     
